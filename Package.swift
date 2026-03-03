@@ -16,10 +16,18 @@ let package = Package(
         .target(
             name: "OpalImagePicker",
             path: "OpalImagePicker",
+            exclude: [
+                "Example",
+                "OpalImagePickerExample",
+                "OpalImagePickerTests"
+            ],
             resources: [
                 .process("Resources")
             ],
-            publicHeadersPath: "."
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath(".")
+            ]
         )
     ],
     swiftLanguageVersions: [.v5]
