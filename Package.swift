@@ -16,11 +16,8 @@ let package = Package(
     targets: [
         .target(
             name: "OpalImagePicker",
-            path: "OpalImagePicker",
-            resources: [
-                .process("Resources")
-            ],
-            publicHeadersPath: "."
+            path: "OpalImagePicker/Source",
+            publicHeadersPath: nil
         )
     ],
     swiftLanguageVersions: [.v5]
