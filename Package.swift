@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "OpalImagePicker",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v13)
     ],
@@ -15,7 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "OpalImagePicker",
-            path: "OpalImagePicker",
+            path: "OpalImagePicker/OpalImagePicker",
             exclude: [
                 "Example",
                 "OpalImagePickerExample",
@@ -24,10 +25,7 @@ let package = Package(
             resources: [
                 .process("Resources")
             ],
-            publicHeadersPath: "include",
-            cSettings: [
-                .headerSearchPath(".")
-            ]
+            publicHeadersPath: "include"
         )
     ],
     swiftLanguageVersions: [.v5]
