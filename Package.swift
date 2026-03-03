@@ -17,12 +17,6 @@ let package = Package(
         .target(
             name: "OpalImagePicker",
             path: "OpalImagePicker",
-            exclude: [
-                "Example",
-                "OpalImagePickerExample", 
-                "OpalImagePickerTests",
-                "Info.plist"
-            ],
             resources: [
                 .process("Resources")
             ],
